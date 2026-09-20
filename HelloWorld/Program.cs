@@ -46,23 +46,60 @@
 // System.Console.WriteLine(x % y);
 
 
-string firstName = "Иван";
-string lastName = "Дудаков";
-string group = "ИСП-241";
-int birthYear = 2008;
-double gpa = 4.5;
-bool hasScholarship = false;
+// string firstName = "Иван";
+// string lastName = "Дудаков";
+// string group = "ИСП-241";
+// int birthYear = 2008;
+// double gpa = 4.5;
+// bool hasScholarship = false;
 
-int currentYear = 2026;
-int age = currentYear - birthYear;
+// int currentYear = 2026;
+// int age = currentYear - birthYear;
 
-System.Console.WriteLine("Студенческое удостоверение");
-System.Console.WriteLine($"Имя: {firstName} {lastName}");
-System.Console.WriteLine($"Группа: {group}");
-System.Console.WriteLine($"Возраст: {age} лет");
-System.Console.WriteLine($"Средний балл: {gpa}");
-System.Console.WriteLine($"Стипендия: {hasScholarship}");
+// System.Console.WriteLine("Студенческое удостоверение");
+// System.Console.WriteLine($"Имя: {firstName} {lastName}");
+// System.Console.WriteLine($"Группа: {group}");
+// System.Console.WriteLine($"Возраст: {age} лет");
+// System.Console.WriteLine($"Средний балл: {gpa}");
+// System.Console.WriteLine($"Стипендия: {hasScholarship}");
 
-Console.Write("\nВведите ваш любимый предмет: ");
-string subject = Console.ReadLine();
-System.Console.WriteLine($"Отлично! {firstName} любит {subject}.");
+// Console.Write("\nВведите ваш любимый предмет: ");
+// string subject = Console.ReadLine();
+// System.Console.WriteLine($"Отлично! {firstName} любит {subject}.");
+
+
+
+// int a = 15;
+// int b = 4;
+// System.Console.WriteLine($"Сумма: {a + b}");
+// System.Console.WriteLine($"Разность: {a - b}");
+// System.Console.WriteLine($"Произведение: {a * b}");
+// System.Console.WriteLine($"Частное (int): {a / b}");
+// System.Console.WriteLine($"Остаток: {a % b}");
+// System.Console.WriteLine($"Частное (double): {(double)a / b}");
+
+
+// System.Console.WriteLine(Math.Abs(-5));
+// System.Console.WriteLine(Math.Pow(2, 10));
+// System.Console.WriteLine(Math.Sqrt(144));
+// System.Console.WriteLine(Math.Max(10, 25));
+// System.Console.WriteLine(Math.Min(10, 25));
+// System.Console.WriteLine(Math.Round(3.567, 2));
+
+
+System.Console.WriteLine("Калькулятор");
+System.Console.WriteLine("Введите первое число:");
+double num1 = double.Parse(Console.ReadLine());
+System.Console.WriteLine("Введите второе число:");
+double num2 = double.Parse(Console.ReadLine());
+System.Console.WriteLine($"Сумма: {num1 + num2}");
+System.Console.WriteLine($"Разность: {num1 - num2}");
+System.Console.WriteLine($"Произведение: {num1 * num2}");
+if (num2 != 0)
+{
+    System.Console.WriteLine($"Частное: {num1 / num2}");
+}
+else
+{
+    System.Console.WriteLine("Деление на ноль невозможно!");
+}
