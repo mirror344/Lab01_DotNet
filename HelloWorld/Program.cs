@@ -87,19 +87,55 @@
 // System.Console.WriteLine(Math.Round(3.567, 2));
 
 
-System.Console.WriteLine("Калькулятор");
-System.Console.WriteLine("Введите первое число:");
-double num1 = double.Parse(Console.ReadLine());
-System.Console.WriteLine("Введите второе число:");
-double num2 = double.Parse(Console.ReadLine());
-System.Console.WriteLine($"Сумма: {num1 + num2}");
-System.Console.WriteLine($"Разность: {num1 - num2}");
-System.Console.WriteLine($"Произведение: {num1 * num2}");
-if (num2 != 0)
-{
-    System.Console.WriteLine($"Частное: {num1 / num2}");
-}
-else
-{
-    System.Console.WriteLine("Деление на ноль невозможно!");
-}
+// System.Console.WriteLine("Калькулятор");
+// System.Console.WriteLine("Введите первое число:");
+// double num1 = double.Parse(Console.ReadLine());
+// System.Console.WriteLine("Введите второе число:");
+// double num2 = double.Parse(Console.ReadLine());
+// System.Console.WriteLine($"Сумма: {num1 + num2}");
+// System.Console.WriteLine($"Разность: {num1 - num2}");
+// System.Console.WriteLine($"Произведение: {num1 * num2}");
+// if (num2 != 0)
+// {
+//     System.Console.WriteLine($"Частное: {num1 / num2}");
+// }
+// else
+// {
+//     System.Console.WriteLine("Деление на ноль невозможно!");
+// }
+
+
+// System.Console.WriteLine(int.MaxValue);
+// System.Console.WriteLine(int.MinValue);
+// System.Console.WriteLine(double.MaxValue);
+// System.Console.WriteLine(double.MinValue);
+
+
+System.Console.WriteLine("Добро пожаловать в анкету!");
+System.Console.WriteLine("Введите ваше имя:");
+string name = Console.ReadLine();
+System.Console.WriteLine("Введите вашу фамилию:");
+string surname = Console.ReadLine();
+System.Console.WriteLine("Введите вашу группу:");
+string group = Console.ReadLine();
+System.Console.WriteLine("Введите ваш год рождения:");
+int birthYear = int.Parse(Console.ReadLine());
+System.Console.WriteLine("Введите ваш средний балл (например 4,5):");
+double gpa = double.Parse(Console.ReadLine());
+
+int currentYear = 2026;
+int age = currentYear - birthYear;
+bool isExcellent = gpa >= 4.5;
+
+string status = isExcellent ? "Отличник" : "Хорошист";
+
+
+System.Console.WriteLine("Ваша анкета");
+System.Console.WriteLine($"Имя: {name} {surname}");
+System.Console.WriteLine($"Группа: {group}");
+System.Console.WriteLine($"Возраст {age} лет");
+System.Console.WriteLine($"Средний балл: {gpa}");
+System.Console.WriteLine($"Статус: {status}");
+System.Console.WriteLine($"Лет до 30: {30 - age}");
+System.Console.WriteLine("Нажмите Enter для выхода");
+Console.ReadLine();
